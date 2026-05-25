@@ -255,7 +255,7 @@
     }
 
     .about-photo img {
-      width: 100%; height: 50%;
+      width: 100%; height: 100%;
       object-fit: cover; object-position: top center;
       display: block;
     }
@@ -323,6 +323,7 @@
 
     @media (max-width: 680px) {
       .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .about-photo { aspect-ratio: 4/3; max-height: 300px; }
       .about-chip { bottom: -12px; right: 12px; }
     }
 
